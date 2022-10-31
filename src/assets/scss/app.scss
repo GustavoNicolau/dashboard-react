@@ -1,0 +1,14 @@
+@import "variables";
+
+body {
+  background-color: $body-bg;
+}
+
+/* Dashboard */
+.credit-card-container {
+  background: linear-gradient(90deg, #84d9fe, #a797ff);
+  p {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+}
