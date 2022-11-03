@@ -6,4 +6,41 @@ $body-bg: #f8f8f8;
 $container-bg: #fff;
 
 // Color System
+$purple: #A855F7;
+$whte: #FFF;
+$blue: #3258f2;
+$lightBlue: #a0eade;
+$cambridgeBlue: #bfd2bf;
+$orange: #f2545b;
+$red: #a93f55;
+$green: #646f4b;
+
+
+$colors: (
+    "purple": #A855F7,
+    "whte": #FFF,
+    "blue": #3258f2,
+    "lightBlue": #a0eade,
+    "cambridgeBlue": #bfd2bf,
+    "orange": #f2545b,
+    "red": #a93f55,
+    "green": #646f4b,
+);
+
+// Variants
+
+$primary: $purple;
+$secondary: $lightBlue;
+$success: $green;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success
+);
+
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+$container-padding: 1.5rem;
+$sidebar-width: 16rem;
 @import "./node_modules/bootstrap/scss/bootstrap";
